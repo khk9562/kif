@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색창</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 50px;
+        }
+
+        .box {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 50px;
+        }
+
+
+        .box input {
+            width: 100px; height: 40px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .box1 input:focus {
+            width: 1000px;
+        }
+
+
+        .box2 {
+            text-align: right;
+        }
+
+        .box2 input:focus {
+            width: 1000px;
+        }
+
+
+        .box3 {
+            text-align: right;
+        }
+
+        .box3 input:focus {
+            width: 1000px;
+        }
+
+
+        header {
+            border: 1px solid #000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header input {
+            width: 1px;
+            opacity: 0;
+            transition: all 0.8s ease-in-out;
+        }
+
+        header input:focus {
+            width: 1000px;
+            opacity: 1;
+        }
+
+        header label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        <input type="text">
+    </div>
+
+    <div class="box box2">
+        <input type="text">
+    </div>
+
+    <div class="box box3">
+        <input type="text" id="aa">
+        <label for="aa">검색</label>
+        <!-- 검색만 클릭해도 텍스트 박스가 포커스됨. -->
+    </div>
+
+    <header>
+        <h1>SiteLogo</h1>
+        <div class="search">
+            <input type="text" id="bb">
+            <label for="bb">검색(돋보기이미지)</label>
+        </div>
+    </header>
+</body>
+</html>
